@@ -1,4 +1,5 @@
 # Load the necessary library for Word document creation
+# 'officer' package is used to create Word documents programmatically
 install.packages('officer', repos='https://cran.rstudio.com/')
 library(officer)
 
@@ -6,8 +7,10 @@ library(officer)
 doc <- read_docx()
 
 # Add sections to the document
+# Each body_add_par() function call adds a new paragraph to the document
 doc <- doc %>% 
   body_add_par('Internal Rate of Return (IRR) Model Documentation', style = 'heading 1') %>% 
+  # Add a heading for the introduction
   body_add_par('Introduction', style = 'heading 2') %>% 
   body_add_par('This document provides an overview of the model used to calculate the Internal Rate of Return (IRR) for a battery installation scenario.', style = 'normal') %>% 
   body_add_par('Model Description', style = 'heading 2') %>% 
