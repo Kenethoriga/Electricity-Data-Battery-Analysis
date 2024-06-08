@@ -1,6 +1,3 @@
-Project: Electricity Data Analysis and Battery Cost-Benefit Analysis
-
-Description: This project involves loading and cleaning electricity data from an Excel file, performing data analysis, and calculating the cost-benefit of installing a battery to optimize electricity usage.
 
 Files:
 
